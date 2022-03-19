@@ -8,7 +8,7 @@
 ######################################################################
 p6df::modules::oracle::deps() {
 	ModuleDeps=(
-    p6m7g8/p6df-docker
+    p6m7g8-dotfiles/p6df-docker
     oracle/docker-images
   )
 }
