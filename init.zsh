@@ -29,19 +29,9 @@ p6df::modules::oracle::external::brew() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::oracle::init()
-#
-#>
-######################################################################
-p6df::modules::oracle::init() {
-
-}
-
-######################################################################
-#<
-#
 # Function: p6df::modules::oracle::build()
 #
+#  Environment:	 P6_DFZ_SRC_DIR _64
 #>
 ######################################################################
 p6df::modules::oracle::build() {
@@ -59,6 +49,7 @@ p6df::modules::oracle::build() {
 #
 # Function: p6df::modules::oracle::run()
 #
+#  Environment:	 ACCEPT_EULA
 #>
 ######################################################################
 p6df::modules::oracle::run() {
