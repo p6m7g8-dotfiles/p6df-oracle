@@ -31,17 +31,38 @@ p6df::modules::oracle::external::brew() {
 #
 # Function: p6df::modules::oracle::build()
 #
-#  Environment:	 P6_DFZ_SRC_DIR _64
+#  Environment:	 P6_DFZ_SRC_DIR
 #>
 ######################################################################
 p6df::modules::oracle::build() {
 
-  (
-    cd $P6_DFZ_SRC_DIR/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles/18.4.0
+  p6_run_dir "$P6_DFZ_SRC_DIR/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles/18.4.0" p6df::modules::oracle::build::download
+  p6_run_dir "$P6_DFZ_SRC_DIR/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles" p6df::modules::oracle::build::docker
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::oracle::build::download()
+#
+#  Environment:	 _64
+#>
+######################################################################
+p6df::modules::oracle::build::download() {
+
     curl -sL -O https://p6df-assets.s3.us-east-2.amazonaws.com/oracle-database-xe-18c-1.0-1.x86_64.rpm
-    cd ..
-    ./buildDockerImage.sh -x -v 18.4.0
-  )
+}
+
+######################################################################
+#<
+#
+# Function: p6df::modules::oracle::build::docker()
+#
+#>
+######################################################################
+p6df::modules::oracle::build::docker() {
+    
+  ./buildDockerImage.sh -x -v 18.4.0
 }
 
 ######################################################################

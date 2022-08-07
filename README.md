@@ -46,6 +46,8 @@
 
 - p6_sqlplus_as_system()
 - p6df::modules::oracle::build()
+- p6df::modules::oracle::build::docker()
+- p6df::modules::oracle::build::download()
 - p6df::modules::oracle::deps()
 - p6df::modules::oracle::external::brew()
 - p6df::modules::oracle::run()
