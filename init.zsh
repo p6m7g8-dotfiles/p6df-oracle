@@ -1,4 +1,4 @@
-
+# shellcheck shell=bash
 ######################################################################
 #<
 #
@@ -7,7 +7,7 @@
 #>
 ######################################################################
 p6df::modules::oracle::deps() {
-	ModuleDeps=(
+  ModuleDeps=(
     p6m7g8-dotfiles/p6df-docker
     oracle/docker-images
   )
@@ -24,6 +24,8 @@ p6df::modules::oracle::external::brew() {
 
   brew install InstantClientTap/instantclient/instantclient-sqlplus
   brew install InstantClientTap/instantclient/instantclient-tools
+
+  p6_return_void
 }
 
 ######################################################################
@@ -38,6 +40,8 @@ p6df::modules::oracle::build() {
 
   p6_run_dir "$P6_DFZ_SRC_DIR/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles/18.4.0" p6df::modules::oracle::build::download
   p6_run_dir "$P6_DFZ_SRC_DIR/oracle/docker-images/OracleDatabase/SingleInstance/dockerfiles" p6df::modules::oracle::build::docker
+
+  p6_return_void
 }
 
 ######################################################################
@@ -51,6 +55,8 @@ p6df::modules::oracle::build() {
 p6df::modules::oracle::build::download() {
 
     curl -sL -O https://p6df-assets.s3.us-east-2.amazonaws.com/oracle-database-xe-18c-1.0-1.x86_64.rpm
+
+    p6_return_void
 }
 
 ######################################################################
@@ -63,6 +69,8 @@ p6df::modules::oracle::build::download() {
 p6df::modules::oracle::build::docker() {
     
   ./buildDockerImage.sh -x -v 18.4.0
+
+  p6_return_void
 }
 
 ######################################################################
@@ -78,6 +86,8 @@ p6df::modules::oracle::run() {
   local now_eps=$(p6_dt_now_epoch_seconds)
 
   docker run -d --name oracle-${now_eps} -e 'ACCEPT_EULA=Y' -e 'ORACLE_PWD=$ORACLE_PWD' -p 11521:11521 oracle/database:18.4.0-xe
+
+  p6_return_void
 }
 
 ######################################################################
@@ -90,4 +100,6 @@ p6df::modules::oracle::run() {
 p6_sqlplus_as_system() {
 
   sqlplus sys/testing12345@//localhost:11521/XE as sysdba "$@"
+
+  p6_return_void
 }
