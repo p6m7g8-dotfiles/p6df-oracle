@@ -54,9 +54,9 @@ p6df::modules::oracle::build() {
 ######################################################################
 p6df::modules::oracle::build::download() {
 
-    curl -sL -O https://p6df-assets.s3.us-east-2.amazonaws.com/oracle-database-xe-18c-1.0-1.x86_64.rpm
+  curl -sL -O https://p6df-assets.s3.us-east-2.amazonaws.com/oracle-database-xe-18c-1.0-1.x86_64.rpm
 
-    p6_return_void
+  p6_return_void
 }
 
 ######################################################################
@@ -67,7 +67,7 @@ p6df::modules::oracle::build::download() {
 #>
 ######################################################################
 p6df::modules::oracle::build::docker() {
-    
+
   ./buildDockerImage.sh -x -v 18.4.0
 
   p6_return_void
