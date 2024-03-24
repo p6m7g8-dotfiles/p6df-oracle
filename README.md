@@ -10,8 +10,7 @@
   - [Summary](#summary)
   - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
-  - [Changes](#changes)
-    - [Usage](#usage)
+  - [Usage](#usage)
   - [Author](#author)
 
 ### Badges
@@ -34,26 +33,54 @@
 
 - [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
 
-## Changes
-
-- [Change Log](CHANGELOG.md)
-
 ## Usage
+
+
+### Aliases
+
+
+### Functions
 
 ### p6df-oracle:
 
 #### p6df-oracle/init.zsh:
 
-- p6_sqlplus_as_system()
-- p6df::modules::oracle::build()
-- p6df::modules::oracle::build::docker()
-- p6df::modules::oracle::build::download()
 - p6df::modules::oracle::deps()
 - p6df::modules::oracle::external::brew()
-- p6df::modules::oracle::run()
+- p6df::modules::oracle::init(_module, dir)
+
+
+### cli:
+
+#### cli/build.sh:
+
+- p6df::modules::oracle::cli::build()
+- p6df::modules::oracle::cli::build::download()
+
+#### cli/docker.sh:
+
+- p6df::modules::oracle::cli::docker::build()
+- p6df::modules::oracle::cli::docker::run()
+
+
+### p6df-oracle/lib:
+
+#### p6df-oracle/lib/cmd.sh:
+
+- p6df::modules::oracle::cmd::sql(...)
 
 
 
+## Hier
+```text
+.
+├── cli
+│   ├── build.sh
+│   └── docker.sh
+└── cmd.sh
+
+2 directories, 3 files
+```
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>
