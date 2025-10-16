@@ -1,85 +1,70 @@
-# p6df-oracle
+# P6's POSIX.2: p6df-oracle
 
 ## Table of Contents
 
-
-### p6df-oracle
-- [p6df-oracle](#p6df-oracle)
-  - [Badges](#badges)
-  - [Distributions](#distributions)
-  - [Summary](#summary)
-  - [Contributing](#contributing)
-  - [Code of Conduct](#code-of-conduct)
-  - [Usage](#usage)
-  - [Author](#author)
-
-### Badges
+## Badges
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/p6m7g8/p6df-oracle)
-[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/p6m7g8/p6df-oracle/&style=flat)](https://mergify.io)
-[![codecov](https://codecov.io/gh/p6m7g8/p6df-oracle/branch/master/graph/badge.svg?token=14Yj1fZbew)](https://codecov.io/gh/p6m7g8/p6df-oracle)
-[![Gihub repo dependents](https://badgen.net/github/dependents-repo/p6m7g8/p6df-oracle)](https://github.com/p6m7g8/p6df-oracle/network/dependents?dependent_type=REPOSITORY)
-[![Gihub package dependents](https://badgen.net/github/dependents-pkg/p6m7g8/p6df-oracle)](https://github.com/p6m7g8/p6df-oracle/network/dependents?dependent_type=PACKAGE)
+[![Mergify](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges//p6df-oracle/&style=flat)](https://mergify.io)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](<https://gitpod.io/#https://github.com//p6df-oracle>)
 
 ## Summary
 
 ## Contributing
 
-- [How to Contribute](CONTRIBUTING.md)
+- [How to Contribute](<https://github.com//.github/blob/main/CONTRIBUTING.md>)
 
 ## Code of Conduct
 
-- [Code of Conduct](https://github.com/p6m7g8/.github/blob/master/CODE_OF_CONDUCT.md)
+- [Code of Conduct](<https://github.com//.github/blob/main/CODE_OF_CONDUCT.md>)
 
 ## Usage
 
-
 ### Aliases
-
 
 ### Functions
 
-### p6df-oracle:
+## cli
 
-#### p6df-oracle/init.zsh:
+### p6df-oracle/lib/cli/build.sh
+
+- p6df::modules::oracle::cli::build()
+- p6df::modules::oracle::cli::build::download()
+
+### p6df-oracle/lib/cli/docker.sh
+
+- p6df::modules::oracle::cli::docker::build()
+- p6df::modules::oracle::cli::docker::run()
+
+## p6df-oracle
+
+### p6df-oracle/init.zsh
 
 - p6df::modules::oracle::deps()
 - p6df::modules::oracle::external::brew()
 - p6df::modules::oracle::init(_module, dir)
 
+## p6df-oracle/lib
 
-### cli:
-
-#### cli/build.sh:
-
-- p6df::modules::oracle::cli::build()
-- p6df::modules::oracle::cli::build::download()
-
-#### cli/docker.sh:
-
-- p6df::modules::oracle::cli::docker::build()
-- p6df::modules::oracle::cli::docker::run()
-
-
-### p6df-oracle/lib:
-
-#### p6df-oracle/lib/cmd.sh:
+### p6df-oracle/lib/cmd.sh
 
 - p6df::modules::oracle::cmd::sql(...)
 
+## Hierarchy
 
-
-## Hier
 ```text
 .
-├── cli
-│   ├── build.sh
-│   └── docker.sh
-└── cmd.sh
+├── init.zsh
+├── lib
+│   ├── cli
+│   │   ├── build.sh
+│   │   └── docker.sh
+│   └── cmd.sh
+└── README.md
 
-2 directories, 3 files
+3 directories, 5 files
 ```
+
 ## Author
 
 Philip M . Gollucci <pgollucci@p6m7g8.com>
