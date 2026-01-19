@@ -20,7 +20,6 @@ p6df::modules::oracle::cli::build() {
 #
 # Function: p6df::modules::oracle::cli::build::download()
 #
-#  Environment:	 _64
 #>
 ######################################################################
 p6df::modules::oracle::cli::build::download() {

@@ -18,7 +18,7 @@ p6df::modules::oracle::cli::docker::build() {
 #
 # Function: p6df::modules::oracle::cli::docker::run()
 #
-#  Environment:	 ACCEPT_EULA
+#  Environment:	 ORACLE_PWD
 #>
 ######################################################################
 p6df::modules::oracle::cli::docker::run() {
