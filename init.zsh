@@ -22,8 +22,8 @@ p6df::modules::oracle::deps() {
 ######################################################################
 p6df::modules::oracle::external::brew() {
 
-  p6df::modules::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-sqlplus
-  p6df::modules::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-tools
+  p6df::core::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-sqlplus
+  p6df::core::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-tools
 
   p6_return_void
 }
