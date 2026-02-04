@@ -50,12 +50,17 @@ TODO: Add a short summary of this module.
 - `p6df::modules::oracle::deps()`
 - `p6df::modules::oracle::external::brew()`
 - `p6df::modules::oracle::init(_module, dir)`
+  - Args:
+    - _module - 
+    - dir - 
 
 #### p6df-oracle/lib
 
 ##### p6df-oracle/lib/cmd.sh
 
 - `p6df::modules::oracle::cmd::sql(...)`
+  - Args:
+    - ... - 
 
 ## Hierarchy
 
