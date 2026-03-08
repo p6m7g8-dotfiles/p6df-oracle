@@ -51,8 +51,8 @@ TODO: Add a short summary of this module.
 - `p6df::modules::oracle::external::brew()`
 - `p6df::modules::oracle::init(_module, dir)`
   - Args:
-    - _module - 
-    - dir - 
+    - _module -
+    - dir -
 
 #### p6df-oracle/lib
 
@@ -60,7 +60,7 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::oracle::cmd::sql(...)`
   - Args:
-    - ... - 
+    - ... -
 
 ## Hierarchy
 
