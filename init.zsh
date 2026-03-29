@@ -16,11 +16,11 @@ p6df::modules::oracle::deps() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::oracle::external::brew()
+# Function: p6df::modules::oracle::external::brews()
 #
 #>
 ######################################################################
-p6df::modules::oracle::external::brew() {
+p6df::modules::oracle::external::brews() {
 
   p6df::core::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-sqlplus
   p6df::core::homebrew::cli::brew::install InstantClientTap/instantclient/instantclient-tools
