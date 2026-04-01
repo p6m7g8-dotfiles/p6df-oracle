@@ -31,19 +31,15 @@ p6df::modules::oracle::external::brews() {
 ######################################################################
 #<
 #
-# Function: p6df::modules::oracle::init(_module, dir)
+# Function: words oracle $ORACLE_HOME = p6df::modules::oracle::profile::mod()
 #
-#  Args:
-#	_module -
-#	dir -
+#  Returns:
+#	words - oracle $ORACLE_HOME
 #
+#  Environment:	 ORACLE_HOME
 #>
 ######################################################################
-p6df::modules::oracle::init() {
-  local _module="$1"
-  local dir="$2"
+p6df::modules::oracle::profile::mod() {
 
-  p6_bootstrap "$dir"
-
-  p6_return_void
+  p6_return_words 'oracle' '$ORACLE_HOME'
 }
