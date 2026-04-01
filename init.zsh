@@ -41,5 +41,5 @@ p6df::modules::oracle::external::brews() {
 ######################################################################
 p6df::modules::oracle::profile::mod() {
 
-  p6_return_words 'oracle' '$ORACLE_HOME'
+  p6_return_words 'oracle' "$"
 }
