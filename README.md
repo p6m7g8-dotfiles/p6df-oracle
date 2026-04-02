@@ -53,6 +53,7 @@ TODO: Add a short summary of this module.
   - Args:
     - _module -
     - dir -
+- `words oracle $ORACLE_HOME = p6df::modules::oracle::profile::mod()`
 
 #### p6df-oracle/lib
 
