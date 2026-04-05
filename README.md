@@ -48,12 +48,8 @@ TODO: Add a short summary of this module.
 ##### p6df-oracle/init.zsh
 
 - `p6df::modules::oracle::deps()`
-- `p6df::modules::oracle::external::brew()`
-- `p6df::modules::oracle::init(_module, dir)`
-  - Args:
-    - _module -
-    - dir -
-- `words oracle $ORACLE_HOME = p6df::modules::oracle::profile::mod()`
+- `p6df::modules::oracle::external::brews()`
+- `words oracle = p6df::modules::oracle::profile::mod()`
 
 #### p6df-oracle/lib
 
@@ -61,7 +57,7 @@ TODO: Add a short summary of this module.
 
 - `p6df::modules::oracle::cmd::sql(...)`
   - Args:
-    - ... -
+    - ...
 
 ## Hierarchy
 

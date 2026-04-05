@@ -31,10 +31,10 @@ p6df::modules::oracle::external::brews() {
 ######################################################################
 #<
 #
-# Function: words oracle $ORACLE_HOME = p6df::modules::oracle::profile::mod()
+# Function: words oracle = p6df::modules::oracle::profile::mod()
 #
 #  Returns:
-#	words - oracle $ORACLE_HOME
+#	words - oracle
 #
 #  Environment:	 ORACLE_HOME
 #>
